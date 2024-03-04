@@ -160,6 +160,14 @@ footer {
     a {
         font-size: 11px;
     }
+
+    .info-img {
+        height: 150px;
+    }
+
+    .ghost-tours {
+        padding: 0px;
+    }
 }
 
 @media (max-width: 400px) {
