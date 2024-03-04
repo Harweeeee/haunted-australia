@@ -1,0 +1,46 @@
+body {
+    font-family: 'DM Sans';
+}
+
+header {
+    background-image: url(/images/pexels-sheep-1846422.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #f2f2f2;
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 90px 0px;
+    border-radius: 4px;
+}
+
+header h1 {
+    font-size: 60px;
+    margin: 0;
+    letter-spacing: 20px;
+    line-height: 1.5;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 25px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+    header h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    header h1 {
+        letter-spacing: 5px;
+    }
+
+    header h2 {
+        letter-spacing: 10px;
+    }
+}
