@@ -1,5 +1,7 @@
 body {
     font-family: 'DM Sans';
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 header {
@@ -7,8 +9,6 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     color: #f2f2f2;
-    max-width: 1300px;
-    margin: 0 auto;
     text-align: center;
     padding: 90px 0px;
     border-radius: 4px;
@@ -29,19 +29,53 @@ header h2 {
     line-height: 1.5;
 }
 
+.grid {
+    display: grid;
+}
+
+.grid-two-columns {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.introduction {
+    margin-top: 10px;
+}
+
+.intro-img {
+    width: 90%;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.intro-desc {
+    padding: 10px;
+    color: #101010;
+}
+
 footer {
     background-image: url(/images/historic-columns.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    max-width: 1300px;
     padding: 20px;
     filter: brightness(2);
     margin-top: 10px;
+    border-radius: 4px;
 }
 
 @media (max-width: 800px) {
     header h1 {
         font-size: 30px;
+    }
+
+    .grid-two-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-desc {
+        text-align: center;
     }
 }
 
