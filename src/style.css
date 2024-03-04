@@ -1,6 +1,6 @@
 body {
     font-family: 'DM Sans';
-    max-width: 1300px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -39,7 +39,7 @@ header h2 {
 }
 
 .introduction {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .intro-img {
@@ -55,6 +55,25 @@ header h2 {
     color: #101010;
 }
 
+.haunted-info {
+    background-color: #c5c3c3;
+    border-radius: 4px;
+    margin: 30px 0px;
+    padding: 10px;
+}
+
+.card {
+    padding: 15px;
+    background-color: rgb(253, 252, 252);
+    text-align: center;
+    border-radius: 6px;
+}
+
+.grid-three-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
 footer {
     background-image: url(/images/historic-columns.jpg);
     background-size: cover;
@@ -65,7 +84,13 @@ footer {
     border-radius: 4px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
+    .grid-three-columns {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 900px) {
     header h1 {
         font-size: 30px;
     }
@@ -74,8 +99,20 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .intro-img {
+        width: 60%;
+    }
+
     .intro-desc {
         text-align: center;
+    }
+
+    .grid-three-columns {
+        grid-template-columns: 1fr;
+    }
+
+    p {
+        font-size: 13px;
     }
 }
 
@@ -86,5 +123,9 @@ footer {
 
     header h2 {
         letter-spacing: 10px;
+    }
+
+    iframe {
+        max-width: 200px;
     }
 }
